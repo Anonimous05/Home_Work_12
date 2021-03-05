@@ -1,0 +1,91 @@
+body {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: "My";
+	src: url("18036.otf");
+}
+.container {
+	width: 100%;
+	height: 100%;
+	background: url("https://images.wallpaperscraft.ru/image/les_doroga_vid_sverhu_127455_3840x2400.jpg") 100% 100% no-repeat;
+	background-size: cover;
+}
+.wrapper {
+	height: 90%;
+	width: 90%;
+	padding-left: 5%;
+	padding-top: 2.5%;
+}
+.slider {
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.50); 
+	backdrop-filter: blur(2px);
+	animation: animate 1s linear;
+}
+.slider.slick-initialized.slick-slider {
+	display: flex;
+}
+.slider button{
+	background: transparent;
+	color: white;
+	border: 0;
+	font-size: 60px;
+}
+.slide_1 {
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	outline: none;
+	cursor: pointer;
+}
+path {
+	transition: all 0.4s;
+}
+svg:hover > path { 
+	fill: grey;
+}
+svg:focus > path {
+	fill: red;
+}
+.title {
+	font-weight: bold;
+	font-size: 50px;
+	letter-spacing: 5px;
+	font-family: "My";
+	text-align: center;
+}
+.description {
+	font-size: 22px;
+	letter-spacing: 2px;
+	text-align: center;
+	font-family: monospace;
+}
+.center {
+	font-weight: bold;
+	font-size: 170px;
+	font-family: "my";
+}
+.lower {
+	font-family: monospace;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+@keyframes animate {
+	from{
+		transform: scale(0.3) rotate(720deg);
+	}
+	to{
+		transform: scale(1);
+	}
+}
